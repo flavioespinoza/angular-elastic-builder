@@ -48,8 +48,8 @@ $scope.elasticBuilderData.query = [];
  * of data they are
  */
 $scope.elasticBuilderData.fields = {
-  'some.number.field': { type: 'number' },
-  'credit.score': { type: 'number', minimum: 680 },
+  'some.number.field': { type: 'number', minimum: 600 },
+  'credit.score': { type: 'number', minimum: 600 },
   'some.term.field': { type: 'term' },
   'some.boolean.field': { type: 'term', subType: 'boolean' },
   'multi.selector': { type: 'multi', choices: [ 'AZ', 'CA', 'CT' ]}
