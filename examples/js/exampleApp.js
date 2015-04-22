@@ -13,14 +13,14 @@
         'and': [
           {
             'range': {
-              'test.number': {
-                'gte': 650
+              'credit.score': {
+                'gte': 680
               }
             }
           },
           {
             'range': {
-              'test.number': {
+              'credit.score': {
                 'lt': 850
               }
             }
@@ -54,7 +54,8 @@
     ];
 
     data.fields = {
-      'test.number': { type: 'number', minimum: 650 },
+      'test.number': { type: 'number', minimum: 680 },
+      'credit.score': { type: 'number', minimum: 680 },
       'test.term': { type: 'term' },
       'test.boolean': { type: 'term', subType: 'boolean' },
       'test.state.multi': { type: 'multi', choices: [ 'AZ', 'CA', 'CT' ]}
