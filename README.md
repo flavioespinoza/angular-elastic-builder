@@ -49,6 +49,7 @@ $scope.elasticBuilderData.query = [];
  */
 $scope.elasticBuilderData.fields = {
   'some.number.field': { type: 'number' },
+  'credit.score': { type: 'number', minimum: 680 },
   'some.term.field': { type: 'term' },
   'some.boolean.field': { type: 'term', subType: 'boolean' },
   'multi.selector': { type: 'multi', choices: [ 'AZ', 'CA', 'CT' ]}
@@ -59,54 +60,8 @@ $scope.elasticBuilderData.fields = {
 <div data-elastic-builder="elasticBuilderData"></div>
 ```
 
-The above elasticFields would allow you create the following form:
+The above elasticFields would allow you create the following form & query:
 ![Screenshot][screenshot-image]
-
-Which represents the following Elasticsearch Query:
-```json
-[
-  {
-    "terms": {
-      "multi.selector": [
-        "AZ",
-        "CT"
-      ]
-    }
-  },
-  {
-    "term": {
-      "some.boolean.field": "0"
-    }
-  },
-  {
-    "not": {
-      "filter": {
-        "term": {
-          "some.term.field": "Hello World"
-        }
-      }
-    }
-  },
-  {
-    "and": [
-      {
-        "range": {
-          "some.number.field": {
-            "gte": 0
-          }
-        }
-      },
-      {
-        "range": {
-          "some.number.field": {
-            "lt": 100
-          }
-        }
-      }
-    ]
-  }
-]
-```
 
 
 ### Field Options
