@@ -138,4 +138,4 @@ To work on this module locally, you will need to clone it and run `gulp watch`. 
 [downloads-url]: https://www.npmjs.org/package/angular-elastic-builder
 [gratipay-image]: https://img.shields.io/gratipay/dncrews.svg
 [gratipay-url]: https://www.gratipay.com/dncrews/
-[screenshot-image]: https://raw.githubusercontent.com/dncrews/angular-elastic-builder/master/screenshot.png
+[screenshot-image]: https://raw.githubusercontent.com/flavioespinoza/angular-elastic-builder/master/screenshot.png
