@@ -63,6 +63,9 @@ $scope.elasticBuilderData.fields = {
 The above elasticFields would allow you create the following form & query:
 ![Screenshot][screenshot-image]
 
+### Group Name & Sub Rule Name
+NOTE:
+  - The Group Name & Sub Rule Name are only placeholders. The logic for this needs to be figured out.
 
 ### Field Options
   - `type`: This determines how the fields are displayed in the form.
