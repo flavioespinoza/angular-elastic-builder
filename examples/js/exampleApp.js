@@ -54,8 +54,8 @@
     ];
 
     data.fields = {
-      'test.number': { type: 'number', minimum: 680 },
-      'credit.score': { type: 'number', minimum: 680 },
+      'test.number': { type: 'number', minimum: 600 },
+      'credit.score': { type: 'number', minimum: 600 },
       'test.term': { type: 'term' },
       'test.boolean': { type: 'term', subType: 'boolean' },
       'test.state.multi': { type: 'multi', choices: [ 'AZ', 'CA', 'CT' ]}
