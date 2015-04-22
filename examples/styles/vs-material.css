@@ -17,16 +17,15 @@ body {
 .elastic-builder .btn-remove {
   background-color: red;
   color: white; }
-.elastic-builder .list-group-item:first-child, .elastic-builder .list-group-item:last-child, .elastic-builder .list-group-item, .elastic-builder .vs-header {
-  -webkit-box-shadow: 2px 2px 6px darkgray;
-  -moz-box-shadow: 2px 2px 6px darkgray;
-  box-shadow: 2px 2px 6px darkgray; }
+.elastic-builder .card-shadow, .elastic-builder .vs-card {
+  -webkit-box-shadow: 1px 0px 3px darkgray;
+  -moz-box-shadow: 1px 0px 3px darkgray;
+  box-shadow: 1px 0px 3px darkgray; }
 .elastic-builder .list-group-item:first-child, .elastic-builder .list-group-item:last-child, .elastic-builder .list-group-item {
   border-radius: 1px;
   margin-bottom: 12px;
   width: 100%;
   overflow: hidden;
-  border: none;
   padding: 12px; }
 .elastic-builder .multi-rule {
   margin-top: 12px; }
@@ -43,7 +42,8 @@ body {
   margin-top: -12px;
   margin-bottom: 18px;
   border-radius: 0;
-  background-color: rgba(255, 255, 255, 0.5); }
+  background-color: rgba(246, 246, 246, 0.65);
+  border-bottom: 1px solid lightgray; }
   .elastic-builder .vs-header .title {
     font-size: 18px;
     line-height: 30px;
